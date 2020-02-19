@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: 1.5s scalandRotateSquare infinite ease-in-out;
+        font-size: 30px;
+      }
+      @keyframes scalandRotateSquare {
+        0% {
+          transform: none;
+          color: white;
+          background-color: black;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+        100% {
+          transform: none;
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">RARARA</div>
+  </body>
+</html>
